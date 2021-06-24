@@ -54,6 +54,11 @@ We continually tweak and adjust this template to help give you the best experien
 
 **December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
----
 
-Happy coding!
+Happy coding
+
+
+- ### links
+
+
+- (allauth)[https://django-allauth.readthedocs.io/en/latest/installation.html]
