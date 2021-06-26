@@ -18,13 +18,18 @@
     {% block corecss %}
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
     {% endblock %}
 
     {% block extra_css %}
+
     {% endblock %}
 
     <!-- Optional JavaScript -->
     {% block corejs %}
+    <!-- kit code -->
+    <script src="https://kit.fontawesome.com/8ebbc0802d.js" crossorigin="anonymous"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -51,22 +56,23 @@
                 <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
                     <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                         <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                            <h2 class="logo-font text-black my-0"><strong>CONXIA</strong> TRAVEL MANAGER</h2>
+                            <h2 class="logo-font text-black my-0"><strong>CONXIA</strong>TRAVEL MANAGER</h2>
                         </a>
                     </div>
                     <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                        <!-- <form method="GET" action="{% url 'products' %}"> -->
-                        <div class="input-group w-100">
-                            <input class="form-control border border-black rounded-0" type="text" name="q"
-                                placeholder="Search our site">
-                            <div class="input-group-append">
-                                <button class="form-control btn btn-black border border-black rounded-0" type="submit">
-                                    <span class="icon">
-                                        <i class="fas fa-search"></i>
-                                    </span>
-                                </button>
+                        <form method="GET" action="">
+                            <div class="input-group w-100">
+                                <input class="form-control border border-black rounded-0" type="text" name="q"
+                                    placeholder="Search our site">
+                                <div class="input-group-append">
+                                    <button class="form-control btn btn-black border border-black rounded-0"
+                                        type="submit">
+                                        <span class="icon">
+                                            <i class="fas fa-search"></i>
+                                        </span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
                         </form>
                     </div>
                     <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -79,32 +85,32 @@
                                         <p class="my-0">My Account</p>
                                     </div>
                                 </a>
-                                <!-- <div class="dropdown-menu border-0" aria-labelledby="user-options">
-                            {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
-                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                            {% endif %}
-                            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
-                            {% else %}
-                            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
-                            {% endif %}
-                        </div> -->
+                                <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                                    {% if request.user.is_authenticated %}
+                                    {% if request.user.is_superuser %}
+                                    <a href="" class="dropdown-item">Product Management</a>
+                                    {% endif %}
+                                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a> -->
+                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                    {% else %}
+                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                    {% endif %}
+                                </div>
                             </li>
                             <li class="list-inline-item">
-                                <!-- <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
-                            href="{% url 'view_bag' %}"> -->
-                                <div class="text-center">
-                                    <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                    <p class="my-0">
-                                        <!-- {% if grand_total %}
-                                    ${{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                    $0.00
-                                    {% endif %} -->
-                                    </p>
-                                </div>
+                                <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+                                    href="">
+                                    <div class="text-center">
+                                        <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                        <p class="my-0">
+                                            {% if grand_total %}
+                                            ${{ grand_total|floatformat:2 }}
+                                            {% else %}
+                                            Total Cost
+                                            {% endif %}
+                                        </p>
+                                    </div>
                                 </a>
                             </li>
                         </ul>
@@ -115,16 +121,15 @@
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
-                            <!-- </button>
-                {% include 'includes/mobile-top-header.html' %}
-                {% include 'includes/main-nav.html' %}
-            </nav>
-        </div> -->
-                            <div id="delivery-banner" class="row text-center">
-                                <div class="col bg-black text-white">
-                                    <h4 class="logo-font my-1">Rent a car ${{ Rent_a_car }}!</h4>
-                                </div>
-                            </div>
+                        </button>
+
+                    </nav>
+                </div>
+                <div id="delivery-banner" class="row text-center">
+                    <div class="col bg-white text-black">
+                        <h4 class="logo-font my-1">Let us make it easier {{ Book_your_Travel }}!</h4>
+                    </div>
+                </div>
             </header>
 
 
