@@ -49,9 +49,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'products',
-    'employee.apps.EmployeeConfig',
-    'rest_framework',
-    'employee',
+    
 ] 
 
 

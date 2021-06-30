@@ -24,7 +24,7 @@
    "workbench.colorTheme": "Visual Studio Dark",
    "editor.defaultFormatter": "HookyQR.beautify",
    "python.testing.pytestArgs": [
-      "products"
+      "."
    ],
    "python.testing.unittestEnabled": false,
    "python.testing.nosetestsEnabled": false,

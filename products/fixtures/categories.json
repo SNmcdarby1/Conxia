@@ -1,111 +1,64 @@
 [ {
-        "pk": 1,
-        "model": "products.category",
-        "fields": {
-            "name": "Flights",
-            "friendly_name": "Flights"
-        }
-    }, {
-        "pk": 2,
-        "model": "products.category",
-        "fields": {
-            "name": "Hotels",
-            "friendly_name": "Hotels"
-        }
-    }, {
-        "pk": 3,
-        "model": "products.category",
-        "fields": {
-            "name": "Car_rental",
-            "friendly_name": "Car Rental"
-        }
-    }, {
-        "pk": 4,
-        "model": "products.category",
-        "fields": {
-            "name": "rail",
-            "friendly_name": "Rail_Ticket"
-        }
-    }, {
-        "pk": 5,
-        "model": "products.category",
-        "fields": {
-            "name": "Profile_user",
-            "friendly_name": "Profile_user"
-        }
-    }, {
-        "pk": 6,
-        "model": "products.category",
-        "fields": {
-            "name": "Edit profile",
-            "friendly_name": "Edit Profile"
-        }
-    }, {
-        "pk": 7,
-        "model": "products.category",
-        "fields": {
-            "name": "Companys_role",
-            "friendly_name": "Companys Role"
-        }
-    }, {
-        "pk": 8,
-        "model": "products.category",
-        "fields": {
-            "name": "Reason_to_Travel",
-            "friendly_name": "Reason To Travel"
-        }
-    }, {
-        "pk": 9,
-        "model": "products.category",
-        "fields": {
-            "name": "Companys_credit_Card",
-            "friendly_name": "Companys Credit Card"
-        }
-    }, {
-        "pk": 10,
-        "model": "products.category",
-        "fields": {
-            "name": "Billpay",
-            "friendly_name": "Billpay"
-        }
-    }, {
-        "pk": 11,
-        "model": "products.category",
-        "fields": {
-            "name": "Invoice",
-            "friendly_name": "Invoice"
-        }
-    },
-    {
-        "pk": 12,
-        "model": "products.category",
-        "fields": {
-            "name": "Calender",
-            "friendly_name": "Calender"
-        }
-    },
-    {
-        "pk": 13,
-        "model": "products.category",
-        "fields": {
-            "name": "Companys_cheque",
-            "friendly_name": "Companys Cheque"
-        }
-    },
-    {
-        "pk": 14,
-        "model": "products.category",
-        "fields": {
-            "name": "Calender",
-            "friendly_name": "Calender"
-        }
-    },
-    {
-        "pk": 15,
-        "model": "products.category",
-        "fields": {
-            "name": "Confirmation",
-            "friendly_name": "Confirmation"
-        }
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+        "name": "activewear",
+        "friendly_name": "Activewear"
     }
-]
+}, {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+        "name": "bed_bath",
+        "friendly_name": "Bed & Bath"
+    }
+}, {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+        "name": "clearance",
+        "friendly_name": "Clearance"
+    }
+}, {
+    "pk": 4,
+    "model": "products.category",
+    "fields": {
+        "name": "deals",
+        "friendly_name": "Deals"
+    }
+}, {
+    "pk": 5,
+    "model": "products.category",
+    "fields": {
+        "name": "essentials",
+        "friendly_name": "Essentials"
+    }
+}, {
+    "pk": 6,
+    "model": "products.category",
+    "fields": {
+        "name": "jeans",
+        "friendly_name": "Jeans"
+    }
+}, {
+    "pk": 7,
+    "model": "products.category",
+    "fields": {
+        "name": "kitchen_dining",
+        "friendly_name": "Kitchen & Dining"
+    }
+}, {
+    "pk": 8,
+    "model": "products.category",
+    "fields": {
+        "name": "new_arrivals",
+        "friendly_name": "New Arrivals"
+    }
+}, {
+    "pk": 9,
+    "model": "products.category",
+    "fields": {
+        "name": "shirts",
+        "friendly_name": "Shirts"
+    }
+} ]
