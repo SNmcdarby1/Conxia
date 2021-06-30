@@ -122,12 +122,13 @@
                             aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
-
+                        {% include 'includes/mobile-top-header.html' %}
+                        {% include 'includes/main-nav.html' %}
                     </nav>
                 </div>
                 <div id="delivery-banner" class="row text-center">
-                    <div class="col bg-white text-black">
-                        <h4 class="logo-font my-1">Let us make it easier {{ Book_your_Travel }}!</h4>
+                    <div class="col bg-black text-white">
+                        <h4 class="logo-font my-1">Let us make it easier {{ free_shipping_threshold }}!</h4>
                     </div>
                 </div>
             </header>

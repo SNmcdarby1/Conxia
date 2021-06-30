@@ -1,0 +1,32 @@
+[ {
+        "EployeeId": 1,
+        "EmployeeName": "Bob",
+        "Department": "IT",
+        "DateOfJoining": "2020-01-01",
+        "PhotoFileName": "anonymous.png",
+
+    },
+    {
+        "EployeeId": 1,
+        "EmployeeName": "Bob",
+        "Department": "IT",
+        "DateOfJoining": "2020-01-01",
+        "PhotoFileName": "anonymous.png",
+
+    },
+    {
+        "EployeeId": 1,
+        "EmployeeName": "Bob",
+        "Department": "IT",
+        "DateOfJoining": "2020-01-01",
+        "PhotoFileName": "anonymous.png",
+
+    },
+], {
+    "EployeeId": 1,
+    "EmployeeName": "Bob",
+    "Department": "IT",
+    "DateOfJoining": "2020-01-01",
+    "PhotoFileName": "anonymous.png",
+
+}, ]
