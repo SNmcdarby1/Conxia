@@ -1,34 +1,25 @@
 from django.contrib import admin
 from .models import Product, Category
 
-
 # Register your models here.
-admin.site.register(Product)
-admin.site.register(Category)
 
+class ProductAdmin(admin.ModelAdmin):
+    list_display = (
+        'sku',
+        'name',
+        'category',
+        'price',
+        'rating',
+        'image',
+    )
 
-# from django.contrib import admin
-# from django.contrib.auth.admin import UserAdmin as BaseUserAdmin import UserAdmin
-# from .models import User
-# from django.contrib.auth.models import User
+    ordering = ('sku',)
 
-# from my_user_profile_app.models import Employee
+class CategoryAdmin(admin.ModelAdmin):
+    list_display = (
+        'friendly_name',
+        'name',
+    )
 
-# # Define an inline admin descriptor for Employee model
-# # which acts a bit like a singleton
-# class EmployeeInline(admin.StackedInline):
-#     model = Employee
-#     can_delete = False
-#     verbose_name_plural = 'employee'
-
-# # Define a new User admin
-# class UserAdmin(UserAdmin):
-#     inlines = (EmployeeInline,)
-
-# # Re-register UserAdmin
-# admin.site.unregister(User)
-# admin.site.register(User, UserAdmin)
-
-# # Register your models here.
-# admin.site.register(Product )
-# admin.site.register(Category)
+admin.site.register(Product, ProductAdmin)
+admin.site.register(Category, CategoryAdmin)
