@@ -14,7 +14,7 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col text-center mt-3">
-            <h2 class="logo-font">Products</h2>sifpl;
+            <h2 class="logo-font">Products</h2>
             {% for c in current_categories %}
             <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                 <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name
@@ -35,31 +35,26 @@
                                 by...
                             </option>
                             <option value="price_asc" { % if current_sorting=='price_asc' % }selected{ % endif % }>Price
-                                (low to high)
-                            </option>
+                                (low to high)</option>
                             <option value="price_desc" { % if current_sorting=='price_desc' % }selected{ % endif % }>
                                 Price
-                                (high to low)
-                            </option>
+                                (high to low)</option>
                             <option value="rating_asc" { % if current_sorting=='rating_asc' % }selected{ % endif % }>
                                 Rating
-                                (low to
-                                high)</option>
+                                (low to high)</option>
                             <option value="rating_desc" { % if current_sorting=='rating_desc' % }selected{ % endif % }>
-                                Rating (high to
-                                low)</option>
+                                Rating (high to low)</option>
                             <option value="name_asc" { % if current_sorting=='name_asc' % }selected{ % endif % }>Name
                                 (A-Z)
                             </option>
-                            <option value="name_desc" { % if current_sorting=='name_desc' % }selected{ % endif %}>Name
+                            <option value="name_desc" { % if current_sorting=='name_desc' % }selected{ % endif % }>Name
                                 (Z-A)</option>
-                            <option value="category_asc" { % if current_sorting=='category_asc' % }selected{% endif % }>
-                                Category (A-Z)
-                            </option>
+                            <option value="category_asc" { % if current_sorting=='category_asc' % }selected{ % endif %
+                                }>
+                                Category (A-Z)</option>
                             <option value="category_desc" { % if current_sorting=='category_desc' % }selected{ % endif %
                                 }>
-                                Category
-                                (Z-A)</option>
+                                Category (Z-A)</option>
                         </select>
                     </div>
                 </div>
