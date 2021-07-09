@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{ % load static % }
+{% load static %}
 
 <!-- Code inspired by the Boutique Ado examples -->
 {% block page_header %}
@@ -19,9 +19,8 @@
             </h1>
             <div class="my-5">
                 <h4>
-                    <a href="{% url 'products' %}"
-                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Conxia Travel
-                        Manager Products</a>
+                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
+                        online</a>
                 </h4>
             </div>
         </div>

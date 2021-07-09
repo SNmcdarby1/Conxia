@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg}') no-repeat center center fixed;
+    background: url('/media/homepage.jpg}') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -81,7 +81,7 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: rgb(13, 104, 99);
+    background: rgb(245, 252, 251);
     z-index: -1;
 }
 
@@ -238,7 +238,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-    color: #17a2b8;
+    color: #f2fcfd;
     /* text-info */
 }
 
