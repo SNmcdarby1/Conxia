@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, reverse, HttpResponse, get_object
 from django.contrib import messages
 
 from products.models import Product
-
+import environ
 # Create your views here.
 
 def view_bag(request):
