@@ -14,7 +14,7 @@
 </div>
 {% endblock %}
 
-{% block content %}
+{ % block content % }
 <div class="overlay"></div>
 <div class="container">
     <div class="row">
@@ -36,7 +36,7 @@
                     <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                 </div>
             </div>
-            {% for item in bag_items %}
+            { % for item in bag_items % }
             <div class="row">
                 <div class="col-2 mb-1">
                     <a href="{% url 'product_detail' item.product.id %}">
@@ -49,7 +49,7 @@
                 </div>
                 <div class="col-7">
                     <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                    <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{%
+                    <p class="my-0 small">Size: { % if item.product.has_sizes % }{{ item.size|upper }}{ % else % }N/A{%
                         endif %}</p>
                     <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
                 </div>
@@ -57,7 +57,7 @@
                     <p class="my-0 small text-muted">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                 </div>
             </div>
-            {% endfor %}
+            { % endfor % }
             <hr class="my-0">
             <div class="row text-black text-right">
                 <div class="col-7 offset-2">
@@ -145,7 +145,7 @@
         </span>
     </h1>
 </div>
-{% endblock %}
+{ % endblock % }
 
 {% block postloadjs %}
 {{ block.super }}
