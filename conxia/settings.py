@@ -121,16 +121,13 @@ WSGI_APPLICATION = 'conxia.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
-
 DATABASES = {
-    'default': dj_database_url.parse('postgres://yriilzgmmplumv:e5c5e0a8ade91db7c3dd4b95770065d3b3a637d2389b0d1c3c1419068ac7604f@ec2-52-19-96-181.eu-west-1.compute.amazonaws.com:5432/d1qdqpbh3vve19')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+}
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
