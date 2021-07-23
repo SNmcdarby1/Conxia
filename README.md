@@ -66,7 +66,7 @@ Happy coding
 ### Conxia 
 <!-- I used the codeinstitute Boutique_ado design, It inspired me create this website using 
 the same code and embedded it to a slightly different style -->
- Conxia is a site that hopes to help the cooperative section of business platform to motivated companies to make travel bookings under their own supervision and budget plan all over the world. The site will be targeted toward small businesses and big business companies who are looking for a way to reduce the total cost of travrl. Conxia will be useful for all businesses budget plan and be able to control the expediture cost at their watch.
+ Conxia is a nail app booking platform  that  provide professional and friendly nail technician services, by highly qualified nail and beauty therepists.
 Mockup image of webpage
 Features
 In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
@@ -77,11 +77,11 @@ o	This section will allow the user to easily navigate from page to page across a
 Image of navigation bar
 •	The landing page image
 o	The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to.
-o	This section introduces the user to Conxia with an eye catching animation to grab their attention
+o	This section introduces the user to Conxia Nail Parlor with an eye catching animation to grab their attention
 Image of landing page
-o	Page name
-o	The page section will allow the user to see the benefits of joining the Conxia as their travel arrangement platform, as well as the benefits of business travels for confrences an other activities.
-o	This user will see the value of signing up for the Conxia meetups. This should encourage the user to consider more booking arrangements for their companies around the world.
+o	Page name Conxia
+o	The page section will allow the user to see the benefits of joining the The Lounge Nail products services  and beauty products.
+o	This user will see the value of signing up for the Conxia Nail Parlor . This should encourage the user to consider more booking arrangements for their companies around the world.
 Image of page
 •	Booking section
 o	This section will allow the user to see exactly the total budget that every user is allowed to use, where they allocated hotels and restaurants are and the conference bookings within the designated locations.
@@ -100,7 +100,7 @@ python3 manage.py startapp products
 o Preloaded data base called fixtures
 Footer image
 •	The Footer
-o	The footer section includes links to the relevant social media sites for Conxia. The links will open to a new tab to allow easy navigation for the user.
+o	The footer section includes links to the relevant social media sites for The Lounge Nail Parlor. The links will open to a new tab to allow easy navigation for the user.
 o	The footer is valuable to the user as it encourages them to keep connected via social media
  
 •	Gallery
@@ -109,7 +109,7 @@ o	This section is valuable to the user as they will be able to easily identify t
 
 gallery
 •	The Sign Up Page
-o	This page will allow the user to get signed up to Conxia to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address.
+o	This page will allow the user to get signed up to  Conxia Nail Parlor to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address.
 Image 
 For some/all of your features, you may choose to reference the specific project files that implement them.
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
