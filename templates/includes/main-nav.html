@@ -14,29 +14,33 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="nail-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Clothing
+                Nail Care
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?category=activewear,essentials" class="dropdown-item">Activewear &amp;
-                    Essentials</a>
-                <a href="{% url 'products' %}?category=jeans" class="dropdown-item">Jeans</a>
-                <a href="{% url 'products' %}?category=shirts" class="dropdown-item">Shirts</a>
-                <a href="{% url 'products' %}?category=activewear,essentials,jeans,shirts" class="dropdown-item">All
-                    Clothing</a>
+            <div class="dropdown-menu border-0" aria-labelledby="nail-link">
+                <a href="{% url 'products' %}?category=manicure,pedicures" class="dropdown-item">Manicure
+                </a>
+                <a href="{% url 'products' %}?category=pedicure" class="dropdown-item">Pedicure</a>
+                <a href="{% url 'products' %}?category=acrylic" class="dropdown-item">Acrylics</a>
+                <a href="{% url 'products' %}?category=gel" class="dropdown-item">Gel</a>
+                <a href="{% url 'products' %}?category=manicurer,pedicure,acrylic,gel" class="dropdown-item">
+                    Nail care products</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link"
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="nailpolish-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Homeware
+                Nail Accessories
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="{% url 'products' %}?category=bed_bath" class="dropdown-item">Bed &amp; Bath</a>
-                <a href="{% url 'products' %}?category=kitchen_dining" class="dropdown-item">Kitchen &amp; Dining</a>
-                <a href="{% url 'products' %}?category=bed_bath,kitchen_dining" class="dropdown-item">All Homeware</a>
+            <div class="dropdown-menu border-0" aria-labelledby="nailaccessories-link">
+                <a href="{% url 'products' %}?category=nail_tips" class="dropdown-item">Nail Tips</a>
+                <a href="{% url 'products' %}?category=nail_glitters" class="dropdown-item">Nail Glitters</a>
+                <a href="{% url 'products' %}?category=nail_polish" class="dropdown-item">Nail Polish</a>
+                <a href="{% url 'products' %}?category=brushes" class="dropdown-item"> Brushes</a>
+                <a href="{% url 'products' %}?category=nail_tips_glitters,nail_polish_brushes" class="dropdown-item">All
+                    Nail Accessories</a>
             </div>
         </li>
 
