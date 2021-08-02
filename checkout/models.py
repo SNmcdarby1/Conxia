@@ -7,6 +7,8 @@ from django.conf import settings
 from django_countries.fields import CountryField
 
 from products.models import Product
+from products.models import Nail
+
 from profiles.models import UserProfile
 
 

@@ -29,6 +29,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TIME_ZONE = 'Ireland/Dublin'
+
+
+LANGUAGE_CODE = 'en-uk'
 
 # Application definition
 
@@ -48,6 +52,12 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    'schedule',
+    'appointment',
+    'payment',
+  
+
+
 
     # Other
     'crispy_forms',
@@ -129,6 +139,7 @@ DATABASES = {
 }
 
 
+FIRST_DAY_OF_WEEK = 1 # Monday
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators

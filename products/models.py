@@ -28,6 +28,26 @@ class Product(models.Model):
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
 
-    def __str__(self):
+
+
+class Nail(models.Model):
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    sku = models.CharField(max_length=254, null=True, blank=True)
+    name = models.CharField(max_length=255)
+    price = models.DecimalField(max_digits=5, decimal_places=2)
+    photo = models.ImageField(upload_to='nails')
+    image_url = models.URLField(max_length=1024, null=True, blank=True)
+    image = models.ImageField(null=True, blank=True)
+
+
+# nail = Nail.objects.get(name="Box Nail")
+#  nail.photo
+# ImageFieldFile: Nails/box.jpg
+# Nail.photo.name
+# 'cars/box.jpg'
+#  Nail.photo.path'/media/box.jpg'
+# >>> Nail.photo.url
+'http://media.example.com/nails/box.jpg'
+def __str__(self):
         return self.name
 

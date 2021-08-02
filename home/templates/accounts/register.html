@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% load static %}
+
+<!-- Code inspired by the Boutique Ado examples -->
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<body>
+    <div class='container' align="center">
+        <div class="row">
+            <div class="col-sm-4">
+                <a class="navbar" href="{% url 'home' %}">
+                    <img src="{% static 'img/favicon.png' %}" alt="logo" style="width:120px;">
+                    <h1>
+                        <font face="Courier New" size=6 color="black"><b>Hair Salon</b></font>
+                    </h1>
+
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <br>
+    <div class="container">
+        <div class="login-box">
+            <div class="row">
+                <div class="flex-sm-column">
+
+
+                    <h1>Sign Up</h1>
+                    <form method="post" action="{% url 'register' %}">{% csrf_token %}
+                        {{ form.name.errors }}
+                        {{ form.name.label_tag }}
+
+                        <div class="textbox">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <input type="email" placeholder="Email" class="form-control" name="email" value="">
+                        </div>
+                        <div class="textbox">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <input type="password" placeholder="Password" class="form-control" name="password" value="">
+                        </div>
+                        <div class="textbox">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                            <input type="tel" placeholder="Contact" class="form-control" name="contact" value="">
+                        </div>
+                        <br>
+                        <!--                            <label class="radio-inline"><input type="radio" name="status" value="store" checked>&nbsp;Store/Salon</label> &nbsp;&nbsp;&nbsp;&nbsp;-->
+                        <!--                            <label class="radio-inline"><input type="radio" name="status" value="employee">&nbsp;Employee</label>&nbsp;&nbsp;&nbsp;&nbsp;-->
+                        <!--                            <label class="radio-inline"><input type="radio" name="status" value="client">&nbsp;Client</label>-->
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+
+                    <h4 style="color: black;margin-left: 20px">Already have an account? <a style="color: #0f6674"
+                            href="{% url 'login' %}"><b>SIGN IN</b></a> </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="//cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
+{% endblock %}
