@@ -1,16 +1,9 @@
---Boutique_Ado css -- html {
+--Boutique_Ado css -- @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+html {
     height: 100%;
 }
 
-@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: white;
-    background-size: cover;
-}
 
 .login-box {
     width: 280px;
@@ -72,12 +65,54 @@ body {
 }
 
 
-body {
+/* body {
     background: url('/media/background1.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
     font-family: 'Lato';
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-family: "Merriweather",
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        "Helvetica Neue",
+        Arial,
+        "Noto Sans",
+        sans-serif,
+        "Apple Color Emoji",
+        "Segoe UI Emoji",
+        "Segoe UI Symbol",
+        "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+ */
+body {
+    color: #000;
+    background: url('/media/background1.jpg') no-repeat center center fixed;
+    background-size: 40%;
+    overflow-x: hidden;
+    height: 100%;
+    background-size: 60%;
+    height: calc(50vh - 85px);
+    color: #555;
+    font-family: 'Lato';
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: linear-gradient(-45deg, rgb(129, 127, 122) 50%rgb(255, 231, 222)0) 50%);
+    background-repeat: no-repeat;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 /* from Bulma */
@@ -89,13 +124,48 @@ body {
     width: 1.5rem;
 }
 
-<style>body {
-    color: #000;
-    overflow-x: hidden;
-    height: 100%;
-    background: linear-gradient(-45deg, black 50%, gray 50%);
-    background-repeat: no-repeat
+#button2 {
+    width: 3em;
+    height: 1.8em;
 }
+
+#button1 {
+    width: 3em;
+    height: 1.8em;
+}
+
+.twitter-typeahead {
+    width: 100%;
+}
+
+.typeahead,
+.tt-query,
+.tt-hint {
+    background-color: white;
+
+    font-size: 15px;
+
+    padding: 8px 12px;
+    width: 760px;
+}
+
+.tt-dropdown-menu {
+
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-shadow: red;
+    margin-top: 12px;
+    padding: 8px 0;
+    width: 422px;
+}
+
+.tt-suggestion {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 3px 10px;
+}
+
 
 .card {
     background-color: #FFF;
@@ -274,14 +344,14 @@ textarea:focus {
     outline-width: 0
 }
 
-< !--button:focus {
-    -->< !-- -moz-box-shadow: none !important;
-    -->< !-- -webkit-box-shadow: none !important;
-    -->< !-- box-shadow: none !important;
-    -->< !-- outline-width: 0--> < !--
+button:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    outline-width: 0
 }
 
--->textarea {
+textarea {
     height: 100px
 }
 
@@ -633,17 +703,6 @@ input[name='q']::placeholder {
     }
 }
 
-body {
-    margin: 0;
-    font-family: "Merriweather", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
 
 hr {
     margin: 1rem 0;
