@@ -1,31 +1,18 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
-            </div>
-        </li>
-
-        <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="nail-link"
                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Nail Care
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="nail-link">
-                <a href="{% url 'products' %}?category=manicure,pedicures" class="dropdown-item">Manicure
+                <a href="{% url 'products' %}?category=manicure,pedicures" class="dropdown-item">Manicure Kit
                 </a>
-                <a href="{% url 'products' %}?category=pedicure" class="dropdown-item">Pedicure</a>
-                <a href="{% url 'products' %}?category=acrylic" class="dropdown-item">Acrylics</a>
-                <a href="{% url 'products' %}?category=gel" class="dropdown-item">Gel</a>
+                <a href="{% url 'products' %}?category=pedicure" class="dropdown-item">Pedicure Kit</a>
+                <a href="{% url 'products' %}?category=acrylic" class="dropdown-item">Acrylics Powder</a>
+                <a href="{% url 'products' %}?category=gel" class="dropdown-item">Gel Polish </a>
                 <a href="{% url 'products' %}?category=manicurer,pedicure,acrylic,gel" class="dropdown-item">
-                    Nail care products</a>
+                    Nail products</a>
             </div>
         </li>
 
@@ -38,24 +25,12 @@
                 <a href="{% url 'products' %}?category=nail_tips" class="dropdown-item">Nail Tips</a>
                 <a href="{% url 'products' %}?category=nail_glitters" class="dropdown-item">Nail Glitters</a>
                 <a href="{% url 'products' %}?category=nail_polish" class="dropdown-item">Nail Polish</a>
-                <a href="{% url 'products' %}?category=brushes" class="dropdown-item"> Brushes</a>
+                <a href="{% url 'products' %}?category=brushes" class="dropdown-item">Brushes</a>
                 <a href="{% url 'products' %}?category=nail_tips_glitters,nail_polish_brushes" class="dropdown-item">All
                     Nail Accessories</a>
             </div>
         </li>
 
-        <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Special Offers
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
-                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All
-                    Specials</a>
-            </div>
-        </li>
+
     </ul>
 </div>

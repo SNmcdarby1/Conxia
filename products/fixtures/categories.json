@@ -61,4 +61,12 @@
         "name": "nail_accessories",
         "friendly_name": "Nail Accessories "
     }
+}, {
+    "pk": 10,
+    "model": "products.category",
+    "fields": {
+        "name": "full_Set",
+        "friendly_name": "Full Set"
+    }
+
 } ]

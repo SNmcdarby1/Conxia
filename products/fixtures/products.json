@@ -2187,51 +2187,47 @@
     "model": "products.product",
     "fields": {
         "sku": "pp5007300026",
-        "name": "by&by Spaghetti Strap Crochet Inset Waist Dress",
-        "description": "A sweetheart neckline, spaghetti straps, crochet insert, illusion waist and flowing skirt give our dress a look that's full of feminine charm. sweetheart neckline sleeveless crochet inset illusion waist zipper on back 34\" length rayon/polyester hand wash, line dry imported",
-        "price": 62.99,
-        "category": 8,
+        "name": "Short Manicure",
+        "description": "Short Acrylic manicure ",
+        "price": 25.00,
+        "category": 2,
         "rating": 5.0,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0421201617033514M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-        "image": "DP0421201617033514M.jpg"
+        "image_url": "https://i.pinimg.com/236x/4d/6f/83/4d6f83347413d127e3ba91f1cefb803b.jpg"
     }
 }, {
     "pk": 172,
     "model": "products.product",
     "fields": {
         "sku": "pp5007310136",
-        "name": "Stylus Flare Jeans",
-        "description": "Add a little retro to your wardrobe to create fashion fun with our Stylus flare jeans. high rise flare leg 5-pockets 32\" inseam cotton/polyester/rayon/spandex washable imported ",
-        "price": 60.99,
-        "category": 6,
+        "name": "Gel manicure",
+        "description": " Round shape",
+        "price": 27.00,
+        "category": 2,
         "rating": 5.0,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP1202201517023245M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-        "image": "DP1202201517023245M.jpg"
+        "image_url": "https://i.pinimg.com/236x/26/96/f1/2696f1757d2d8ecc90933e8ba5a058cb.jpg"
     }
 }, {
     "pk": 173,
     "model": "products.product",
     "fields": {
         "sku": "pp5007310220",
-        "name": "Alyx Printed Maxi Skirt",
-        "description": "With a stretch-knit fabric and on-trend print, our Alyx maxi skirt is sure to be an instant favorite. 40\" length polyester/spandex hand wash, line dry imported ",
-        "price": 58.99,
-        "category": 8,
+        "name": "Box Nails",
+        "description": " ",
+        "price": 45.00,
+        "category": 2,
         "rating": 4.5,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0325201617032536M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-        "image": "DP0325201617032536M.jpg"
+        "image_url": "https://i.pinimg.com/236x/ff/00/f2/ff00f22e7a37de78b7ed0e8df55aa40b.jpg"
     }
 }, {
     "pk": 174,
     "model": "products.product",
     "fields": {
         "sku": "pp5007320233",
-        "name": "St. John's Bay Ikat Sharkbite Tank Top",
-        "description": "Add our tank top to your warm-weather wardrobe, featuring a sharkbite hem and a flowy style that looks great with shorts or skinny jeans. roundneck sharkbite hem rayon washable imported petite: 30\" length misses: 32\" length",
-        "price": 36.99,
-        "category": 8,
+        "name": "Full set",
+        "description": "",
+        "price": 75.00,
+        "category": 10,
         "rating": 5.0,
-        "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0429201617074742M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-        "image": "DP0429201617074742M.jpg"
+        "image_url": "https://i.pinimg.com/236x/c5/20/f0/c520f0e04cf8ad19360223de95469403.jpg"
     }
 } ]
