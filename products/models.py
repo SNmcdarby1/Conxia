@@ -1,4 +1,3 @@
-  
 from django.db import models
 
 
@@ -40,14 +39,6 @@ class Nail(models.Model):
     image = models.ImageField(null=True, blank=True)
 
 
-# nail = Nail.objects.get(name="Box Nail")
-#  nail.photo
-# ImageFieldFile: Nails/box.jpg
-# Nail.photo.name
-# 'cars/box.jpg'
-#  Nail.photo.path'/media/box.jpg'
-# >>> Nail.photo.url
-'http://media.example.com/nails/box.jpg'
 def __str__(self):
         return self.name
 

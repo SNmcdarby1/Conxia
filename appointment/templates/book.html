@@ -26,7 +26,7 @@
 
         <div class="col-12 col-md-6">
             <div class="allauth-form-inner-content">
-                <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+                <div id="topnav" class="row bg-white pt-mf-2 d-none d-lg-flex">
                     <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                         <a href="{% url 'home' %}" class="nav-link main-logo-link">
                             <h2 class="logo-font text-black my-0"><strong>Conxia</strong> Nail Parlor</h2>
@@ -39,41 +39,40 @@
         </header>
         <div class="container  px-1 py-5 mx-auto">
             <div class=" row d-flex justify-content-center">
-                <div class="col-xl-6 h-100 col-lg-6 col-md-7">
+                <div class="col-12">
                     <div class="card h-100 b-0">
                         <form method="POST" action="{% url 'success' %}">{% csrf_token %}
                             <h3 class="heading">Book your Service</h3>
 
-
+                            <!-- 
                             <ul id="progressbar" class="text-center">
                                 <li class="active step0" id="step1"></li>
                                 <li class="step0" id="step2"></li>
                                 <li class="step0" id="step3"></li>
                                 <li class="step0" id="step4"></li>
-                            </ul>
+                            </ul> -->
 
 
                             <fieldset class="show">
                                 <div class="form-card" align="center">
                                     <h5 class="sub-heading" align="left">Select Service :</h5>
                                     <hr>
-                                    <div class="form-group">
-                                        <input name="service" id="service" type="text" data-provide="typeahead"
-                                            class="form-control" placeholder="Type your service..." required>
+                                    <button id="next0" class="btn btn-primary mt-1 mb-1 next mt-4"
+                                        onclick="validate1(0)">Book in for a service :</h5>
+                                        <div class="col-12">
+                                            <div class="col-3"></div>
+                                            <li>Manicure</li>&nbsp;
+                                            <li>Pedicure</li>&nbsp;
+                                            <li>Full
+                                                Set</li>&nbsp;
 
-                                    </div>
-                                    <!--                        <h5 align="left">Trending :</h5>-->
-                                    <div class="row">
-                                        <div class="col-1"></div>
-                                        <label class="btn btn-danger">Manicure</label>&nbsp;
-                                        <label class="btn btn-danger">Pedicure</label>&nbsp;
-                                        <label class="btn btn-danger">Full Set</label>&nbsp;
+                                        </div>
+                                        <div class="form-group">
+                                            <input name="service" id="service" type="text" data-provide="typeahead"
+                                                class="form-control" placeholder="Type your service..." required>
 
-                                    </div>
+                                        </div>
 
-                                    <button id="next1" class="btn btn-primary mt-3 mb-1 next mt-4">NEXT<span
-                                            class="fa fa-long-arrow-right"></span></button>
-                                </div>
                             </fieldset>
                             <fieldset>
                                 <div class="form-card" align="center">
@@ -167,9 +166,10 @@
 
                 $( ".next" ).click( function () {
 
-                    str1 = "next1";
-                    str2 = "next2";
-                    str3 = "next3";
+                    str1 = "next0";
+                    str2 = "next1";
+                    str3 = "next2";
+                    str4 = "next3";
 
                     if ( !str2.localeCompare( $( this ).attr( 'id' ) ) && validate1( 0 ) == true ) {
                         val2 = true;
