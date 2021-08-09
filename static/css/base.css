@@ -1,29 +1,26 @@
---Boutique_Ado css -- @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
-
-
-
-
-
-
-
-
-
-
-
+/*--Boutique_Ado css --*/
+@import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 
 html {
     height: 100%;
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    color: #036164;
+    background-image: url('/media/art4.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
     font-family: 'Lato';
 }
 
-/* from Bulma */
+.background-image {
+    background-image: url('/media/art4.jpg')
+}
+
+bg {
+    color: #F9A825;
+}
+
 .icon {
     align-items: center;
     display: inline-flex;
