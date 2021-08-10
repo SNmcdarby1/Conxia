@@ -1,49 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load bag_tools %}
+{% load service %}
 {% block content %}
-<style>
-    #button2 {
-        width: 3em;
-        height: 1.8em;
-    }
 
-    #button1 {
-        width: 3em;
-        height: 1.8em;
-    }
-
-    .twitter-typeahead {
-        width: 100%;
-    }
-
-    .typeahead,
-    .tt-query,
-    .tt-hint {
-        background-color: white;
-
-        font-size: 15px;
-
-        padding: 8px 12px;
-        width: 760px;
-    }
-
-    .tt-dropdown-menu {
-
-        background-color: white;
-        border: 1px solid white;
-        border-radius: 8px;
-        box-shadow: red;
-        margin-top: 12px;
-        padding: 8px 0;
-        width: 422px;
-    }
-
-    .tt-suggestion {
-        font-size: 10px;
-        line-height: 10px;
-        padding: 3px 10px;
-    }
-</style>
 <!-- breadcrumb start-->
 <section class="breadcrumb breadcrumb_bg">
     <div class="container">

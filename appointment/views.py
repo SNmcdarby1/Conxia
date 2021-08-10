@@ -19,7 +19,7 @@ def book(request):
         'employees':employees,
         'services':services,
     }
-    return render(request,'book.html',context=context)
+    return render(request,'book.html')
 
 def home(request):
     services = Service.objects.all()
@@ -43,7 +43,7 @@ def contact(request):
 
 
 def services(request):
-    return render(request,'service.html')
+    return render(request,'services.html')
 
 def appointment(request):
     if request.method=='POST':

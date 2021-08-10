@@ -10,23 +10,103 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-100">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="display-4 logo-font text-black">
-                The new collections are here
-            </h1>
-            <div class="my-5">
-                <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
-                        Now</a>
-                </h4>
-                <h4>
-                    <a href="{% url 'book' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Book
-                        appointment</a>
-                </h4>
-            </div>
+<section id="hero-outer">
+    <div id="hero-image"></div>
+
+    <div id="times">
+        <h2>Get the gloumarous Look</h2>
+        <h3>With Conxia Lounge parlour</h3>
+    </div>
+</section>
+<section id=" times club-ethos">
+    <h2 id="welcome">Why book With Us?</h2>
+    <div id="left-about">
+        <div class="left-about-heading times">
+            <h2>Feel Healthy </i></h2>
+            <hr>
+            <p>
+                Since it improves the way you feel and look .
+            </p>
+        </div>
+        <div class="left-about-heading">
+            <h2>Feel Free </h2>
+            <hr>
+            <p>
+                Feel more energetic, more glamouraous and, yes, happier.
+            </p>
+        </div>
+
+    </div>
+    <div id="right-about">
+        <div class="right-about-heading">
+            <h2>Get Social </i></h2>
+            <hr>
+            <p>
+                When we compete with others, we can share to inspire you to try new looks.
+            </p>
+        </div>
+        <div class="right-about-heading">
+            <h2>Feel your enner beauty as well as outside </i></h2>
+            <hr>
+            <p>
+                Share your art designs with out technicians.
+            </p>
         </div>
     </div>
-</div>
+    <div id="center-about">
+        <div id="circle-container">
+            <div id="circle-cover-bg"></div>
+
+        </div>
+    </div>
+</section>
+<section class="col-12" id="times">
+    <div>
+        <h2>Shellac </i></h2>
+        <h3>Monday</h3>
+        <h3>3 pm</h3>
+        <h4>
+            <a href="{% url 'book' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Book
+                appointment</a>
+        </h4>
+    </div>
+    <div>
+        <h2>Gel Art Designs</h2>
+        <h3>Wednesday</h3>
+        <h3>18:30</h3>
+        <h4>
+            <a href="{% url 'book' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Book
+                appointment</a>
+        </h4>
+    </div>
+    <div>
+        <h2>Acrylic</i></h2>
+        <h3>Friday</h3>
+        <h3>18:30</h3>
+        <h4>
+            <a href="{% url 'book' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Book
+                appointment</a>
+        </h4>
+    </div>
+    <div class="times">
+        <h4>
+            <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop
+                Now</a>
+        </h4>
+        <h4>
+            <a href="{% url 'book' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Book a
+                service
+                Now</a>
+        </h4>
+    </div>
+
+</section>
+<footer>
+    <ul class="social-networks" id="times">
+        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"> </i></li>
+        <li><a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"> </i></li>
+        <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube-square"> </i></li>
+        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"> </i></li>
+    </ul>
+</footer>
 {% endblock %}
