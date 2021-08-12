@@ -28,7 +28,7 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name='Salarie',
+            name='Services',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('type', models.CharField(choices=[('MONTHLY', 'MONTHLY'), ('HOURLY', 'HOURLY')], max_length=10)),

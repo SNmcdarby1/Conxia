@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.conf.urls.appointments import appointments
 from appointment.views import home,appointment,contact,services,book,success,search
 from profiles.views import LoginUser,RegisterUser,Logout_view,ActivateAccount,dashboard,password
 from payment.views import payhome,paycancel,payreturn,stripesuccess,checkout,stripecheckout
@@ -30,10 +31,10 @@ urlpatterns = [
     path('bag/', include('bag.urls')),
     path('checkout/', include('checkout.urls')),
     path('profile/', include('profiles.urls')),
+    path('appointment/', include('appointment')),
     path('appointment', appointment, name='appointment'),
     path('contact', contact, name='contact'),
     path('services', services, name='services'),
-    # path('activate/<uidb64>/<token>/<status>',ActivateAccount.as_view(),name='activate'),
     path('logout',Logout_view,name='logout'),
     path('login',LoginUser,name='login'),
     path('register',RegisterUser,name='register'),
@@ -47,4 +48,4 @@ urlpatterns = [
     path('dashboard',dashboard,name='dashboard'),
     path('stripecheckout',stripecheckout,name='stripe_checkout'),
     path('stripesuccess',stripesuccess,name='stripe_success'),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

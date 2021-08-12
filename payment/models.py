@@ -9,15 +9,15 @@ from django.contrib import admin
 # Register your models here.
 
 
-SALARY_TYPE = (
+SERVICE_TYPE = (
 	("MONTHLY", "MONTHLY"),
 	("HOURLY", "HOURLY"),
 	)
 
 
-class Salarie(models.Model):
+class Service(models.Model):
     user = models.ForeignKey(Employee,on_delete=models.CASCADE,blank=True,null=True)
-    type = models.CharField(max_length=10,choices=SALARY_TYPE)
+    type = models.CharField(max_length=10,choices=SERVICE_TYPE)
     amount = models.DecimalField(default=0.00,max_digits=10,decimal_places=2)
 
     def __str__(self):

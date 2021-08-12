@@ -171,3 +171,4 @@ No releases published
 Packages
 Contributors 3
 •	
+* pip install django-appointments==1.5

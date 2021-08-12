@@ -152,18 +152,18 @@
         {% endfor %}
     </div>
     {% endif %}
-
     {% block page_header %}
-    {% endblock %}
+    <div class="col bg-black text-white">
+        <div itemid="logo my-1">Conxia Lounge Nail parlor ${{ free_delivery_threshold }}!</div>
 
-    {% block content %}
-    {% endblock %}
-
-    {% block postloadjs %}
-    <script type="text/javascript">
-        $( '.toast' ).toast( 'show' );
-    </script>
-    {% endblock %}
+        {% endblock %}
+        {% block content %}
+        {% endblock %}
+        {% block postloadjs %}
+        <script type="text/javascript">
+            $( '.toast' ).toast( 'show' );
+        </script>
+        {% endblock %}
 
 
 </body>

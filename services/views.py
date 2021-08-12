@@ -1,47 +1,23 @@
+from django.shortcuts import render
 
+# Create your views here.
 from django.shortcuts import render,redirect
-from .models import Appointment,Service
+from django.views.decorators.csrf import csrf_exempt
+from django.http import JsonResponse
 from .utils import random_string_generator
 from profiles.models import Employee,Store
 from .models import Complain
 from django.contrib import messages
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
-import random
+
 # Create your views here.
+import random
 
-def book(request):
-    employees = Employee.objects.values_list('name',flat=True)
-    services_ = Service.objects.values_list('name',flat=True)
-    services = []
-    for i in services_:
-        services.append(i)
-    context = {
-        'employees':employees,
-        'services':services,
-    }
-    return render(request,'book.html')
+from profiles.models import Client
+from django.contrib.auth.models import User
 
-def home(request):
-    services = Service.objects.all()
-
-    return render(request,'home.html',{'services':services})
-
-def contact(request):
-    if request.method=='POST':
-        name = request.POST.get('name')
-        message = request.POST.get('message')
-        email = request.POST.get('email')
-        subject = request.POST.get('subject')
-
-        obj = Complain.objects.create(name=name,email=email,subject=subject,message=message)
-        messages.info(request,"Thanks for reaching out.We will get in touch soon!!!")
-        return redirect('contact')
-    return render(request,'contact.html')
-
-
-
-
-
+from django.conf import settings
+im
 def services(request):
     return render(request,'services.html')
 
@@ -111,3 +87,4 @@ def search(request):
         'store':store,
     }
     return render(request,'search.html',context=context)
+

@@ -16,7 +16,7 @@ from django.shortcuts import render,redirect
 from django.utils.http import is_safe_url
 from django.utils.safestring import mark_safe
 from .models import Client,Store,Employee
-from payment.models import Salarie
+
 
 from django.contrib.sites.shortcuts import get_current_site
 from django.template.loader import render_to_string
@@ -55,33 +55,6 @@ def profile(request):
     return render(request, template, context)
 
 
-
-
-class ActivateAccount(View):
-    def get(self,request,uidb64,token,status):
-        try:
-            uid = force_text(urlsafe_base64_decode(uidb64))
-            user = User.objects.get(pk=uid)
-            if user is not None:
-                if status=='store':
-                    obj = Store.objects.filter(user=user).first()
-                elif status=='employee':
-                    obj = Employee.objects.filter(user=user).first()
-                else:
-                    obj = Client.objects.filter(user=user).first()
-        except Exception:
-            user = None
-
-        if user is not None and generate_token.check_token(user,token):
-            obj.active = True
-            obj.save()
-            messages.info(request,'Account Verified.Please login')
-            return redirect('login')
-
-        return render(request,'activate_fail.html',status=401)
-
-
-
 def send_activation(request,user,status):
 
     current_site = get_current_site(request)
@@ -104,7 +77,7 @@ def send_activation(request,user,status):
     
     email_message.send()
 
-def RegisterUser(request):
+def ProfileUser(request):
 
     if request.method=='POST':
         email = request.POST.get('email')
@@ -131,7 +104,7 @@ def RegisterUser(request):
         messages.info(request,"Verification mail is sent to email provided.Please Login post verification")
 
         return redirect('login')
-    return render(request,'register.html')
+    return render(request,'index.html')
 
 
 
@@ -202,7 +175,7 @@ def dashboard(request):
     if request.method=='POST':
         emp_name = request.POST.get('emp_name')
         emp_info = Employee.objects.filter(name=emp_name)[0]
-        sal_info = Salarie.objects.filter(user=emp_info)[0]
+        sal_info = Services.objects.filter(user=emp_info)[0]
         print(sal_info)
     user = request.user
     store = Store.objects.filter(user=user).first()
