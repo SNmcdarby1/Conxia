@@ -32,7 +32,7 @@
    "python.testing.unittestArgs": [
       "-v",
       "-s",
-      "./conxia",
+      ".",
       "-p",
       "*test.py"
    ]

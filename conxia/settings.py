@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'schedule',
-    'appointments',
+    'appointment',
     'payment',
     
 

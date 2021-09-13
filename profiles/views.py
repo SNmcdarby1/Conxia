@@ -175,7 +175,7 @@ def dashboard(request):
     if request.method=='POST':
         emp_name = request.POST.get('emp_name')
         emp_info = Employee.objects.filter(name=emp_name)[0]
-        sal_info = Services.objects.filter(user=emp_info)[0]
+        sal_info = Service.objects.filter(user=emp_info)[0]
         print(sal_info)
     user = request.user
     store = Store.objects.filter(user=user).first()

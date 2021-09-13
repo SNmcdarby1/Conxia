@@ -28,9 +28,11 @@
     {% block content %}
     {% endblock content %}
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
+    <form class="mt-3" action="{% url 'service' %}" method="POST" id="profile-update-form">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <button class="btn btn-black rounded-0 text-uppercase float-right">Update Information</button>
+    </form>
     <script>window.jQuery || document.write( '<script src="{% static 'users / js / jquery - slim.min.js' %}"><\/script>' )</script>
     <script src="{% static 'users/js/popper.min.js' %}"></script>
     <script src="{% static 'users/js/bootstrap.min.js' %}"></script>

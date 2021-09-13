@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Booking</title>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid px-1 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="col-xl-4 col-lg-6 col-md-7">
+                <div class="card b-0">
+                    <h3 class="heading">Booking Details</h3>
+
+
+
+                    <form method="POST" action="{% url 'payment_home' %}">{% csrf_token %}
+                        <input type="hidden" name="order_id" value="{{ order_id }}">
+                        <input type="hidden" name="email" value="{{ email }}">
+                        <input type="hidden" name="service" value="{{ service }}">
+                        <input type="hidden" name="stylist" value="{{ stylist }}">
+                        <input type="hidden" name="date" value="{{ date }}">
+                        <input type="hidden" name="time" value="{{ time }}">
+                        <input type="hidden" name="amount" value="{{ amount }}">
+                        <input type="hidden" name="name" value="{{ name }}">
+                        <div class="form-card">
+                            <p><b>Order ID :</b>&nbsp;&nbsp;{{order_id}}</p>
+                            <p><b>Name :</b>&nbsp;&nbsp;{{name}}</p>
+                            <p><b>Email :</b>&nbsp;&nbsp;{{email}}</p>
+                            <p><b>Service :</b>&nbsp;&nbsp;{{service}}</p>
+                            <p><b>Stylist :</b>&nbsp;&nbsp;{{stylist}}</p>
+                            <p><b>Date :</b>&nbsp;&nbsp;{{date}}</p>
+                            <p><b>Time :</b>&nbsp;&nbsp;{{time}}</p>
+                            <p><b>Amount :</b>&nbsp;&nbsp;{{amount}} $</p>
+                            <div align="center" class="check"> <img style="width:100px;height:100px;"
+                                    class="fit-image check-img" src="{% static 'img/success.gif'%}"> </div>
+                        </div>
+                        <p>Already logged in?</p>
+                        <div class="row">
+                            <div class="col-2"></div>
+                            <button name="submit" value="button3" type="submit" class="btn btn-info">Pay via
+                                Card</button>
+                        </div>
+                        <hr>
+                        <div class="row">
+                            <div class="col-4"></div>
+                            <button name="submit" value="button2" type="submit" class="btn btn-info">Login &
+                                Pay</button>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</body>
+
+</html>
